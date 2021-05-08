@@ -18,7 +18,7 @@ header{
 }
 .home{
   width: 90%;
-  padding: 4rem;
+  padding: 2rem;
   margin-right: 5rem;
   display: flex;
   flex-direction: row;
@@ -26,7 +26,9 @@ header{
 
 }
 .product_main_container{
-  padding: 40px;
+ padding-top: 10px;
+ padding-left: 40px;
+ padding-right: 40px;
     -webkit-box-shadow: 1px 1px 5px 0 #455c71;
     -moz-box-shadow: 1px 1px 5px 0 #455c71;
     box-shadow: 1px 1px 5px 0 #455c71;
@@ -38,9 +40,12 @@ header{
 }
 .product_content{
   padding: 0.2rem;
+  padding-left: 1rem;
 }
 .product_content>h2{
   color: #ffffff;
+ margin-left: 4rem;
+ 
 }
 .complete_product_flex{
   display: flex;
@@ -49,17 +54,124 @@ header{
 }
 .product{
   width: 100%;
-  margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inc_dec_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  width: 250px;
+}
+.increment{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #1DA1F2;
+  padding: 5px;
+margin: 2px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #1DA1F2;
+margin-left: 0.5rem;
+cursor: pointer;
+}
+.increment:hover{
+  color: #ffffff;
+  background-color: #1DA1F2;
+}
+.increment:active{
+  color: #ffffff;
+  background-color: #1DA1F2;
+}
+.decrement{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #1DA1F2;
+  padding: 5px;
+margin: 2px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #1DA1F2;
+margin-left: 0.5rem;
+cursor: pointer;
+
+}
+
+.decrement:hover{
+  color: #ffffff;
+  background-color: #1DA1F2;
+}
+.decrement:active{
+  color: #ffffff;
+  background-color: #1DA1F2;
+}
+.inc_dec_wrap>p{
+  color: #1DA1F2;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.product>p{
+  width: 80px;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 .graph_main_container{
-  padding: 40px;
+  padding: 10px;
   -webkit-box-shadow: 1px 1px 5px 0 #455c71;
   -moz-box-shadow: 1px 1px 5px 0 #455c71;
   box-shadow: 1px 1px 5px 0 #455c71;
-  min-height: 450px;
+  min-height: 550px;
   height: 100%;
   max-height: 550px;
  
 
   width: 40%;
+}
+.graph_main_container>h3{
+  color: #ffffff;
+ 
+}
+.performChart{
+  position: relative;
+    width: 100%;
+}
+@media screen and (max-width:595px) {
+  .App{
+    overflow-y: scroll;
+  }
+  .App::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  .App::-webkit-scrollbar-track {
+    background: #394F62;
+  }
+  
+  .App::-webkit-scrollbar-thumb {
+    background: #6D8DA6;
+    
+  }
+  
+     .home{
+       flex-direction: column;
+     }
+     .product_main_container{
+          width: 76%;
+          margin-bottom: 2rem;
+     }
+     .graph_main_container{
+      width: 90%;
+     }
+     .performChart {
+      margin-top: 5rem;
+    
+  }
 }
